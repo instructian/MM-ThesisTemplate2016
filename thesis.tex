@@ -1,59 +1,54 @@
-%% thesis.tex 2014/04/11
-%
+% thesis.tex 2016/09/16
 % Based on sample files of unknown authorship.
+% Based on sample files of Paul Vojta.
+% Adapted By Ian Pollock, CSU East Bay
 %
-% The Current Maintainer of this work is Paul Vojta.
+%
+%
+%
+% DO NOT EDIT THIS!
+% Click on the project link in the top left corner 
+% to see all the files of this template
+%
+%
+%
+%
+%
+%
 
-\documentclass{ucbthesis}
-\usepackage{biblatex}
-
-% To compile this file, run "latex thesis", then "biber thesis"
-% (or "bibtex thesis", if the output from latex asks for that instead),
-% and then "latex thesis" (without the quotes in each case).
+\documentclass[masters]{CSUEBMMGthesis}
+\usepackage[backend=bibtex, citestyle=authoryear-comp]{biblatex}
 
 % Double spacing, if you want it.  Do not use for the final copy.
-% \def\dsp{\def\baselinestretch{2.0}\large\normalsize}
-% \dsp
-
-% If the Grad. Division insists that the first paragraph of a section
-% be indented (like the others), then include this line:
-% \usepackage{indentfirst}
-
+\def\dsp{\def\baselinestretch{2.0}\large\normalsize}
+\dsp
+%ignore these settings
 \newtheorem{theorem}{Jibberish}
-
 \bibliography{references}
-
 \hyphenation{mar-gin-al-ia}
 \hyphenation{bra-va-do}
 
+%this is where everything starts
 \begin{document}
 
 % Declarations for Front Matter
-
-\title{Eulerian Knowledge Prexy and Lyman Zig on Wiggly}
-\author{Tom Lifesaver}
+\title{THESIS TITLE} 
+\author{Author One \\ Author Two \\ Author Three}
 \degreesemester{Spring}
-\degreeyear{1995}
-\degree{Doctor of Philosophy}
-\chair{Professor Richard Francis Sony}
-\othermembers{Professor Roger Spam \\
-  Associate Professor Michael Chex}
+\degreeyear{2017}
+\degree{Master of Arts}
+\chair{Professor Gwyan Rhabyt}
+\othermembers{Professor Ian Pollock \\
+Professor Janet Green \\
+Professor John MacWillie}
 \numberofmembers{3}
-% Previous degrees are no longer to be listed on the title page.
-% \prevdegrees{B.A. (University of Northern South Dakota at Hoople) 1978 \\
-%   M.S. (Ed's School of Quantum Mechanics and Muffler Repair) 1989}
-\field{Mathematics}
+\field{Multimedia}
 % Designated Emphasis -- this is optional, and rare
-% \emphasis{Colloidal Telemetry}
+\emphasis{Interaction Design}
 % This is optional, and rare
 % \jointinstitution{University of Western Maryland}
 % This is optional
-\campus{Berkeley}
-
-% For a masters thesis, replace the above \documentclass line with
-% \documentclass[masters]{ucbthesis}
-% This affects the title and approval pages, which by default calls this
-% document a "dissertation", not a "thesis".
+\campus{East Bay}
 
 \maketitle
 % Delete (or comment out) the \approvalpage line for the final version.
@@ -61,24 +56,21 @@
 \copyrightpage
 
 \include{abstract}
-
 \begin{frontmatter}
 
 \begin{dedication}
 \null\vfil
 \begin{center}
-To Ossie Bernosky\\\vspace{12pt}
-And exposition? Of go. No upstairs do fingering. Or obstructive, or purposeful.
-In the glitter. For so talented. Which is confines cocoa accomplished.
-Masterpiece as devoted. My primal the narcotic. For cine? To by recollection
-bleeding. That calf are infant. In clause. Be a popularly. A as midnight
-transcript alike. Washable an acre. To canned, silence in foreign.
+The dedication page is optional.
+If used, it comes after the approval page.
+It is not counted, numbered or listed in the Table of Contents. It is used to acknowledge those who have supported you during your graduate studies. This is not typically the place to recognize those who assisted you in your academic research, which is done on the required Acknowledgments page.
+
+There are no restrictions on the style or format.
 \end{center}
 \vfil\null
 \end{dedication}
 
-% You can delete the \clearpage lines if you don't want these to start on
-% separate pages.
+% You can delete the \clearpage lines if you don't want these to start on separate pages.
 
 \tableofcontents
 \clearpage
@@ -87,16 +79,14 @@ transcript alike. Washable an acre. To canned, silence in foreign.
 \listoftables
 
 \begin{acknowledgements}
-Bovinely invasive brag; cerulean forebearance.
-Washable an acre. To canned, silence in foreign.
-Be a popularly. A as midnight transcript alike.
-To by recollection bleeding. That calf are infant. In clause.
-Buckaroo loquaciousness?  Aristotelian!
-Masterpiece as devoted. My primal the narcotic. For cine?
-In the glitter. For so talented. Which is confines cocoa accomplished.
-Or obstructive, or purposeful.
-And exposition? Of go. No upstairs do fingering.
+This is where you thank all the people you feel indebted to in the creation of the thesis
 
+Foremost, I would like to express my sincere gratitude to my advisor Prof. ..
+
+Besides my advisor, I would like to thank  ......
+I thank my fellow  .....
+
+Last but not the least, I would like to thank my family......
 \end{acknowledgements}
 
 \end{frontmatter}
@@ -105,12 +95,20 @@ And exposition? Of go. No upstairs do fingering.
 
 % (Optional) \part{First Part}
 
-\include{chap1}
-\include{chap2}
+\include{concept}
+\include{priorart}
+\include{projectdevelopment}
+\include{usertesting}
+\include{results}
+\include{discussion}
+\include{dissemination}
+\include{conclusion}
+\include{recommendations}
+
 
 % \appendix
 % \chapter{More Monticello Candidates}
 
 \printbibliography
-
+\include{appendixN}
 \end{document}
